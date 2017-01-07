@@ -1,0 +1,63 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Our Drones</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <ion-list-header>
+      Mini Drones
+    </ion-list-header>
+    <button ion-item *ngFor="let drone of listOfDrones['mini_drones']" (click)="openModal({drone: drone})">
+      <ion-avatar item-left>
+        <img src="assets/img/{{ drone.image }}">
+      </ion-avatar>
+      <h2>{{ drone.name }}</h2>
+      <h3>{{ drone.tag_line }}</h3>
+      <p>{{ drone.price }}</p>
+    </button>
+  </ion-list>
+  <ion-list>
+    <ion-list-header>
+      Video Drones
+    </ion-list-header>
+    <button ion-item *ngFor="let drone of listOfDrones['video_drones']" (click)="openModal({drone: drone})">
+      <ion-avatar item-left>
+        <img src="assets/img/{{ drone.image }}">
+      </ion-avatar>
+      <h2>{{ drone.name }}</h2>
+      <h3>{{ drone.tag_line }}</h3>
+      <p>{{ drone.price }}</p>
+    </button>
+  </ion-list>
+  <ion-list>
+    <ion-list-header>
+      Camera Drones
+    </ion-list-header>
+    <button ion-item *ngFor="let drone of listOfDrones['camera_drones']" (click)="openModal({drone: drone})">
+      <ion-avatar item-left>
+        <img src="assets/img/{{ drone.image }}">
+      </ion-avatar>
+      <h2>{{ drone.name }}</h2>
+      <h3>{{ drone.tag_line }}</h3>
+      <p>{{ drone.price }}</p>
+    </button>
+  </ion-list>
+  <ion-list>
+    <ion-list-header>
+      Real Estate Drones
+    </ion-list-header>
+    <button ion-item *ngFor="let drone of listOfDrones['real_estate_drones']" (click)="openModal({drone: drone})">
+      <ion-avatar item-left>
+        <img src="assets/img/{{ drone.image }}">
+      </ion-avatar>
+      <h2>{{ drone.name }}</h2>
+      <h3>{{ drone.tag_line }}</h3>
+      <p>{{ drone.price }}</p>
+    </button>
+  </ion-list>
+</ion-content>

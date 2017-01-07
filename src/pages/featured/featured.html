@@ -1,0 +1,76 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Hawkeye Drones</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-title text-center class="featured-card-title">
+      Our Featured Drones
+    </ion-card-title>
+    <ion-slides [options]="featuredSlideOptions" padding>
+      <ion-slide>
+        <img src="assets/img/{{ featured1.image }}" height="200" />
+        <ion-card-content>
+          <h2>{{ featured1.name }}</h2>
+          <h3> {{ featured1.tag_line }} </h3>
+        </ion-card-content>
+        <ion-row no-padding>
+          <ion-col>
+            <button ion-button clear small color="primary" >
+              {{ featured1.price }}
+            </button>
+          </ion-col>
+          <ion-col text-right>
+            <button ion-button clear small color="info" icon-left (click)="openModal({drone: featured1})">
+              <ion-icon name='information-circle'></ion-icon>
+              Learn More
+            </button>
+          </ion-col>
+        </ion-row>
+      </ion-slide>
+      <ion-slide>
+        <img src="assets/img/{{ featured2.image }}" height="200" />
+        <ion-card-content>
+          <h2>{{ featured2.name }}</h2>
+          <h3> {{ featured2.tag_line }} </h3>
+        </ion-card-content>
+        <ion-row no-padding>
+          <ion-col>
+            <button ion-button clear small color="primary" >
+              {{ featured2.price }}
+            </button>
+          </ion-col>
+          <ion-col text-right>
+            <button ion-button clear small color="info" icon-left (click)="openModal({drone: featured2})">
+              <ion-icon name='information-circle'></ion-icon>
+              Learn More
+            </button>
+          </ion-col>
+        </ion-row>
+      </ion-slide>
+      <ion-slide>
+        <img src="assets/img/{{ featured3.image }}" height="200" />
+        <ion-card-content>
+          <h2>{{ featured3.name }}</h2>
+          <h3> {{ featured3.tag_line }} </h3>
+        </ion-card-content>
+        <ion-row no-padding>
+          <ion-col>
+            <button ion-button clear small color="primary" >
+              {{ featured3.price }}
+            </button>
+          </ion-col>
+          <ion-col text-right>
+            <button ion-button clear small color="info" icon-left (click)="openModal({drone: featured3})">
+              <ion-icon name='information-circle'></ion-icon>
+              Learn More
+            </button>
+          </ion-col>
+        </ion-row>
+      </ion-slide>
+    </ion-slides>
+  </ion-card>
+    
+</ion-content>
