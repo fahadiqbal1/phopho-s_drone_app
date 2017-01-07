@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, ModalController, Slides } from 'ionic-angular';
+import { NavController, ModalController } from 'ionic-angular';
 
 import { DroneDetailPage } from '../drone-detail/drone-detail';
 import { ListOfDrones } from '../../resources/data/drones';
