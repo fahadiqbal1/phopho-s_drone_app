@@ -1,0 +1,21 @@
+// Bungee Font
+// Google
+// Apache License, version 2.0
+// http://www.apache.org/licenses/LICENSE-2.0.html
+
+$Bungee-font-path: $font-path !default;
+
+@font-face {
+  font-family: "Bungee";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Bungee"), local("Bungee-Regular"), url("#{$Bungee-font-path}/Bungee-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Bungee";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Bungee"), local("Bungee-Regular"), url("#{$Bungee-font-path}/Bungee-Regular.ttf") format("truetype");
+}
+

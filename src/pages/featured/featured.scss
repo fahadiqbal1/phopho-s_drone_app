@@ -2,4 +2,20 @@ page-featured {
     .featured-card-title {
         border-bottom: 1px solid #cccccc;
     }
+    .content {
+        background-image:    url('../assets/img/1Cp602q67HnYbKcvGmz_-0Rg0LxKWZqDRsfDiEYk.png');
+        background-size:     cover;
+        background-repeat:   no-repeat;
+        background-position: center center;
+        background-size:     100vw 100%;
+    }
+    .custom-toolbar{
+        padding: 25px;
+        h1 {
+            font-family: 'Bungee', cursive;
+        }
+        h5 {
+            font-family: 'Montserrat', sans-serif;
+        }
+    }
 }

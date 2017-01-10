@@ -1,0 +1,20 @@
+// Montserrat Font
+// Google
+// Apache License, version 2.0
+// http://www.apache.org/licenses/LICENSE-2.0.html
+
+$Montserrat-font-path: $font-path !default;
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat"), local("Montserrat-Regular"), url("#{$Montserrat-font-path}/Montserrat-regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Montserrat Bold"), local("Montserrat-Bold"), url("#{$Montserrat-font-path}/Montserrat-bold.ttf") format("truetype");
+}
