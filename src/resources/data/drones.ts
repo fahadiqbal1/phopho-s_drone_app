@@ -106,3 +106,46 @@ export const ListOfDrones: any = {
             }
         ]
     };
+
+export const ChooseDrone: any = {
+    "type" : "root",
+    "children" : [
+        {
+            "name" : "Photographer",
+            "type" : "child",
+            "icon" : "camera",
+            "children" : [
+                {
+                    "type" : "item",
+                    "group" : "camera_drones",
+                    "object" : 0,
+                    "reasoning" : "The camera on this thing is sick, yo!"
+                }
+            ]
+        },
+        {
+            "name" : "Video",
+            "type" : "child",
+            "icon" : "videocam",
+            "children" : []
+        },
+        {
+            "name" : "Outdoors",
+            "type" : "child",
+            "icon" : "bonfire",
+            "children" : []
+        },
+        {
+            "name" : "Real Estate",
+            "type" : "child",
+            "icon" : "home",
+            "children" : [
+                {
+                    "type" : "item",
+                    "group" : "real_estate_drones",
+                    "object" : 1,
+                    "reasoning" : "This drone can stay in the air for almost 25 mins! Allowing you to survey the land or do calculations like a baus!"
+                }
+            ]
+        },
+    ]};

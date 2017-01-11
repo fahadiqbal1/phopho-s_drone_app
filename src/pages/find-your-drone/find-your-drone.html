@@ -12,27 +12,22 @@
     <h1 text-center>Find Your <br> Perfect Drone</h1>
   </div>
   <ion-card>
-    <ion-list>
-      <button ion-item>
-        <ion-icon name="camera" item-left></ion-icon>
-        Photographer
-      </button>
-
-      <button ion-item>
-        <ion-icon name="videocam" item-left></ion-icon>
-        Video
-      </button>
-
-      <button ion-item>
-        <ion-icon name="bonfire" item-left></ion-icon>
-        Outdoors
-      </button>
-
-      <button ion-item>
-        <ion-icon name="home" item-left></ion-icon>
-        Real Estate
-      </button>
-
+    <ion-list *ngFor='let choice of droneChoices; let i = index;' class="wrap">
+      <div *ngIf="choice.type === 'item'">
+        <button ion-item (click)="openModal({drone: drones[choice.group][choice.object]})">
+          <ion-avatar item-left>
+            <img src="assets/img/{{ drones[choice.group][choice.object]['image'] }}">
+          </ion-avatar>
+          <h2>{{ drones[choice.group][choice.object]['name'] }}</h2>
+          <p class="item wrap">{{ choice.reasoning }}</p>
+        </button>
+      </div>
+      <div *ngIf="choice.type !== 'item'">
+        <button ion-item (click)="itemSelect(choice, i)">
+          <ion-icon name="{{choice.icon}}" item-left></ion-icon>
+          {{choice.name}}
+        </button>
+      </div>
     </ion-list>
   </ion-card>
 </ion-content>

@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams, ModalController } from 'ionic-angular';
+import { DroneDetailPage } from '../drone-detail/drone-detail';
+import { ListOfDrones,ChooseDrone } from '../../resources/data/drones';
 
 /*
   Generated class for the FindYourDrone page.
@@ -13,10 +15,35 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class FindYourDronePage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {}
+  droneChoices: any = ChooseDrone.children;
+  drones: any = ListOfDrones;
+
+  constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl: ModalController) {}
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad FindYourDronePage');
+  }
+
+  itemSelect(item, index) {
+    switch (item.type) {
+      case "child":
+        item.children.push({"name" : "Back","type" : "reset","icon" : "", "index" : index});
+        this.droneChoices = item.children;
+        break;
+      case "reset":
+        let rootAry = ChooseDrone.children[item.index];
+        rootAry.children.pop();
+        this.droneChoices = ChooseDrone.children;
+        break;
+    
+      default:
+        break;
+    }
+  }
+
+  openModal(data) {
+    let modal = this.modalCtrl.create(DroneDetailPage, data);
+    modal.present();
   }
 
 }
