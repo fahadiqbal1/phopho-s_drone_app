@@ -78,3 +78,27 @@ $colors: (
 @import "noto-sans";
 @import "../assets/fonts/Montserrat";
 @import "../assets/fonts/Bungee";
+
+
+
+
+
+  .content {
+      background-image:    url('../assets/img/1Cp602q67HnYbKcvGmz_-0Rg0LxKWZqDRsfDiEYk.png');
+      background-size:     cover;
+      background-repeat:   no-repeat;
+      background-position: center center;
+      background-size:     100vw 100%;
+  }
+  .list-header {
+      background-color: rgba(255, 255, 255, 0.75);
+  }
+  .custom-toolbar{
+      padding: 25px;
+      h1 {
+          font-family: 'Bungee', cursive;
+      }
+      h5 {
+          font-family: 'Montserrat', sans-serif;
+      }
+  }
