@@ -118,22 +118,54 @@ export const ChooseDrone: any = {
                 {
                     "type" : "item",
                     "group" : "camera_drones",
+                    "object" : 3,
+                    "reasoning" : "Allowing a 30 minute flight time, you will be capable to take the most HD quality pictures with more time than most drones."
+                },
+                {
+                    "type" : "item",
+                    "group" : "camera_drones",
                     "object" : 0,
-                    "reasoning" : "The camera on this thing is sick, yo!"
-                }
+                    "reasoning" : "Allowing a 30 minute flight time, you will be capable to take the most HD quality pictures with more time than most drones."
+                },
             ]
         },
         {
             "name" : "Video",
             "type" : "child",
             "icon" : "videocam",
-            "children" : []
+            "children" : [
+                {
+                    "type" : "item",
+                    "group" : "video_drones",
+                    "object" : 0,
+                    "reasoning" : "Most frequently brought drone for video coverage, you will be able to get a live visualization of where your drone is taking you, with the help of your own electronic device!"
+                },
+                {
+                    "type" : "item",
+                    "group" : "video_drones",
+                    "object" : 2,
+                    "reasoning" : "Easy to use among anyone with modes based on your expertise."
+                },
+            ]
         },
         {
             "name" : "Outdoors",
             "type" : "child",
             "icon" : "bonfire",
-            "children" : []
+            "children" : [
+                {
+                    "type" : "item",
+                    "group" : "mini_drones",
+                    "object" : 0,
+                    "reasoning" : "Good wind resistance control and contains a headless security system, easy to transport."
+                },
+                {
+                    "type" : "item",
+                    "group" : "camera_drones",
+                    "object" : 2,
+                    "reasoning" : "Good wind resistance control and contains a headless security system, easy to transport."
+                },
+            ]
         },
         {
             "name" : "Real Estate",
@@ -145,6 +177,12 @@ export const ChooseDrone: any = {
                     "group" : "real_estate_drones",
                     "object" : 1,
                     "reasoning" : "This drone can stay in the air for almost 25 mins! Allowing you to survey the land or do calculations like a baus!"
+                },
+                {
+                    "type" : "item",
+                    "group" : "real_estate_drones",
+                    "object" : 2,
+                    "reasoning" : "One of the world’s fastest and smartest drone starting at a low price!"
                 }
             ]
         },

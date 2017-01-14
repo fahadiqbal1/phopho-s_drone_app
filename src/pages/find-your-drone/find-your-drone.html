@@ -12,6 +12,11 @@
     <h1 text-center>Find Your <br> Perfect Drone</h1>
   </div>
   <ion-card>
+    <ion-card-content>
+      Below are drones hand picked by our expert staff that will meet your whatever your needs are. Our staff takes special care in selecting only the best and most reliable models so that you have the best experience possible with your drone!
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
     <ion-list *ngFor='let choice of droneChoices; let i = index;' class="wrap">
       <div *ngIf="choice.type === 'item'">
         <button ion-item (click)="openModal({drone: drones[choice.group][choice.object]})">

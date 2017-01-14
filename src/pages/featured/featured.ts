@@ -17,7 +17,7 @@ export class FeaturedPage {
   featuredSlideOptions = {
     loop: true,
     autoplay: 1500,
-    pager: true
+    pager: false
   };
 
   constructor(public navCtrl: NavController, public modalCtrl: ModalController) { }

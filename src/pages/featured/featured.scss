@@ -1,3 +1,37 @@
 page-featured {
-   
+   ion-slide {
+       ion-card-content {
+           padding-bottom: 10px;
+       }
+       img {
+            max-height: 200px !important;
+            margin: 0 auto;
+        }
+        .swiper-pagination {
+            bottom: 0px !important;
+        }
+   }
+    .limited-time-offer {
+        background-color: rgba(248, 65, 65, 0.7);
+        padding: auto 10;
+        border-radius: 15px;
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            color: #fff;
+            text-decoration: underline;
+        }
+        h4 {
+            font-family: "Roboto", "Helvetica Neue", sans-serif;
+        }
+    }
+    .deal {
+        background-color: rgba(65, 200, 248, 0.7);
+        padding: auto 10;
+        border-radius: 15px;
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            color: #000;
+            text-decoration: underline;
+        }
+    }
 }
